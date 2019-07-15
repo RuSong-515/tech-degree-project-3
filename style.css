@@ -1,0 +1,186 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  background: #fcf9bb;
+  font-family: Merriweather, Arial, Helvetica, sans-serif;
+}
+
+form {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  background: #515966;
+  color: white;
+  padding: 40px 0;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #515966;
+  letter-spacing: 0.1rem;
+  
+}
+
+h2 + p {
+  text-align: center;
+  color: rgb(151, 148, 148);
+  font-size: 1.2rem;
+  padding-bottom: 50px;
+  border-bottom: solid #515966 7px;
+  margin-bottom: 5px;;
+}
+
+fieldset {
+  border: none;
+
+}
+
+legend:first-child {
+  padding: 30px 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #515966;
+  border-top: solid #515966 2px;
+  width: 100%;
+}
+
+.part1 {
+  margin-bottom: 30px;
+}
+
+label {
+  color: #858b94;
+  margin: 6px 0;
+  font-size: 1.2rem;
+  display: block;
+}
+
+.part1 input,
+#state {
+  background: rgb(245, 244, 244);
+  border: none;
+  height: 60px;
+  width: 100%;
+  border-radius: 5px;
+  margin: 7px 0 12px;
+  font-size: 1.1rem;
+}
+
+input[type="number"] {
+  width: 50%;
+}
+
+.part1 input:focus {
+  outline: none;
+  border: solid #19386b 2px;
+  border-radius: 5px;
+}
+
+::placeholder {
+  text-align: right;
+  color: lightgray;
+  padding-right: 20px; 
+  font-style: italic;
+}
+
+#state {
+  color: lightgray;
+  font-size: 1.2rem;
+  padding-left: 15px;
+}
+
+select:focus {
+  outline: none;
+}
+
+input + label {
+  display: inline-block;
+  margin: 10px;
+}
+
+.item,
+textarea {
+  margin-bottom: 30px;
+}
+
+#other {
+  background: rgb(245, 244, 244);
+  width: 100%;
+  height: 150px;
+  border: 0;
+  border-radius: 5px;
+  margin: 20px 0 30px;;
+}
+
+button {
+  background: #31d6cb;
+  width: 100%;
+  display: block;
+  padding: 20px 0;
+  color: white;
+  font-size: 1.5rem !important;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  transition: background 0.5s ease-out;
+}
+
+button:hover {
+  background: lightskyblue;
+}
+
+footer {
+  margin: 35px auto;
+  color: rgb(151, 148, 148);
+  text-align: center;
+  text-transform: capitalize;
+  font-style: italic;
+}
+
+@media (min-width:768px) {
+  form {
+    width: 65%;
+    max-width: 980px;
+    margin: 0 auto !important;
+  }
+  
+  h1 {
+    padding: 25px;
+    font-size: 1.7em;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  label {
+    display: inline-block;
+  }
+
+  .part1 input,
+  #state {
+    width: 69%;
+  }
+
+  input[type="number"] {
+    width: 30%;
+  }
+
+  .part1 label {
+    width: 30%;
+  }
+
+}
