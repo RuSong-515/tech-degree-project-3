@@ -178,9 +178,9 @@ footer {
     flex-basis: 25%;
   }
 
-  #zip {
+  .zip input {
     flex-basis: 30%;
-    align-self: flex-start;
+    margin-right: auto;
   }
 
 }
