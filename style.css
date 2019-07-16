@@ -170,12 +170,12 @@ footer {
 
   .part1 input,
   #state {
-    flex-basis: 75%;
+    flex-basis: 70%;
   }
 
   .part1 label,
   .zip label {
-    flex-basis: 25%;
+    flex-basis: 30%;
   }
 
   .zip input {
