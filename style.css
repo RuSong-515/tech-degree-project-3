@@ -162,25 +162,25 @@ footer {
 
   .container {
     display: flex;
+    align-items: center;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
-  label {
-    display: inline-block;
-  }
 
   .part1 input,
   #state {
-    width: 69%;
+    flex-basis: 75%;
   }
 
-  input[type="number"] {
-    width: 30%;
+  .part1 label,
+  .zip label {
+    flex-basis: 25%;
   }
 
-  .part1 label {
-    width: 30%;
+  #zip {
+    flex-basis: 30%;
+    align-self: flex-start;
   }
 
 }
